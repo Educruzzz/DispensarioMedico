@@ -15,8 +15,8 @@ public class conexion {
     
     public conexion getConnection(){
         try {
-    String myBD = /*aca la URL de la BD */ "jdbc:mysql://localhost:3306/rentcar?serverTimezone=UTC";
-            java.sql.Connection con = DriverManager.getConnection(myBD,"root", "" );
+    String myBD = /*aca la URL de la BD */ "jdbc:derby://localhost:1527/DispensarioMedico";
+            java.sql.Connection con = DriverManager.getConnection(myBD,"root", "1234" );
     return (conexion) con;
     
     } catch(SQLException e){

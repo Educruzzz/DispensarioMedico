@@ -9,7 +9,6 @@ package modelo;
  *
  * @author DELL
  */
-public class Dispensario {
+public class MedicamentosDAO {
     
-     
 }
