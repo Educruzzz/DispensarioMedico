@@ -12,12 +12,24 @@ package modelo;
 public class Medicamentos {
     
     private int idMedicamento;
-    private String Descripcion, Marca, Farmaco, Ubicacion, Estado;
+    private String Descripcion, Marca, Farmaco, Ubicacion;
     private double Dosis;
+    private boolean Estado;
 
-    public Medicamentos() {
+    
+    public Medicamentos(int idMedicamento, String Descripcion, String Marca, String Farmaco, String Ubicacion, double Dosis, boolean Estado) {
+        
+        this.idMedicamento = idMedicamento;
+        this.Descripcion = Descripcion;
+        this.Marca = Marca;
+        this.Farmaco = Farmaco;
+        this.Ubicacion = Ubicacion;
+        this.Dosis = Dosis;
+        this.Estado = Estado;
     }
+    
 
+    
     public int getIdMedicamento() {
         return idMedicamento;
     }
@@ -58,11 +70,11 @@ public class Medicamentos {
         this.Ubicacion = Ubicacion;
     }
 
-    public String getEstado() {
+    public boolean getEstado() {
         return Estado;
     }
 
-    public void setEstado(String Estado) {
+    public void setEstado(boolean Estado) {
         this.Estado = Estado;
     }
 
