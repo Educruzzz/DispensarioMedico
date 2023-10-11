@@ -1,10 +1,10 @@
 
-package config;
+/**package config;
 
-/**
+
  *
  * @author DELL
- */
+ 
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -23,4 +23,4 @@ public class DatabaseConnection {
         }
     }
 }
-
+*/

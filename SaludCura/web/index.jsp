@@ -9,9 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Salud Cura</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Ver medicamentos</h1>
+        
+        <p>Click on the button to check the drugs: </p>>
+        <form action="SvMedicamentos" method="GET"> 
+            
+            <button type="submit"> Mostrar Medicamentos </button>
+            
+        </form>
     </body>
 </html>

@@ -5,16 +5,20 @@
  */
 package modelo;
 
-/**
- *
- * @author DELL
- */
 public class Medicos {
+    
+    
     
     private int idMedico, Cedula;
     private String Nombre, Especialidad, Tanda, Estado;
 
-    public Medicos() {
+    public Medicos(int idMedico, int Cedula, String Nombre, String Especialidad, String Tanda, String Estado) {
+        this.idMedico = idMedico;
+        this.Cedula = Cedula;
+        this.Nombre = Nombre;
+        this.Especialidad = Especialidad;
+        this.Tanda = Tanda;
+        this.Estado = Estado;
     }
 
     public int getIdMedico() {

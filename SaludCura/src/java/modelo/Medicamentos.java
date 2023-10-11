@@ -1,25 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modelo;
 
-/**
- *
- * @author DELL
- */
-public class Medicamentos {
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+
+@Entity
+public class Medicamentos implements Serializable {
     
-    private int idMedicamento;
+    @Id
+    
+    private int idMedicamento, id;
     private String Descripcion, Marca, Farmaco, Ubicacion;
     private double Dosis;
     private boolean Estado;
 
-    
-    public Medicamentos(int idMedicamento, String Descripcion, String Marca, String Farmaco, String Ubicacion, double Dosis, boolean Estado) {
+    public Medicamentos() {
         
+    }
+    
+    public Medicamentos(int idMedicamento, int id, String Descripcion, String Marca, String Farmaco, String Ubicacion, double Dosis, boolean Estado) {
         this.idMedicamento = idMedicamento;
+        this.id = id;
         this.Descripcion = Descripcion;
         this.Marca = Marca;
         this.Farmaco = Farmaco;
@@ -28,14 +32,20 @@ public class Medicamentos {
         this.Estado = Estado;
     }
     
-
-    
     public int getIdMedicamento() {
         return idMedicamento;
     }
 
     public void setIdMedicamento(int idMedicamento) {
         this.idMedicamento = idMedicamento;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDescripcion() {
@@ -70,14 +80,6 @@ public class Medicamentos {
         this.Ubicacion = Ubicacion;
     }
 
-    public boolean getEstado() {
-        return Estado;
-    }
-
-    public void setEstado(boolean Estado) {
-        this.Estado = Estado;
-    }
-
     public double getDosis() {
         return Dosis;
     }
@@ -86,6 +88,15 @@ public class Medicamentos {
         this.Dosis = Dosis;
     }
 
+    public boolean isEstado() {
+        return Estado;
+    }
+
+    public void setEstado(boolean Estado) {
+        this.Estado = Estado;
+    }
+    
 }
+    
 
-
+   
